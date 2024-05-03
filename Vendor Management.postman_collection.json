@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "02902914-172f-4df2-8ee1-7c91b052e597",
+		"name": "Vendor Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34687170"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"arpit\",\r\n    \"password\":\"abcd1234\",\r\n    \"confirm_password\":\"abcd1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/register/"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"arpit\",\r\n    \"password\":\"abcd1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Vendors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/vendors/"
+			},
+			"response": []
+		},
+		{
+			"name": "Vendors POST",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\":\"arpit\",\r\n\t\"contract_details\":\"! year\",\r\n\t\"address\":\"adheri\",\r\n\t\"vendor_code\":\"23fsgrd3258\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/vendors/"
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor-Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/vendors/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor-delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/vendors/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Vendor-put",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"arpit\",\r\n    \"contract_details\": \"2 year\",\r\n    \"address\": \"adheri2\",\r\n    \"vendor_code\": \"23fsgrd35454\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/vendors/1"
+			},
+			"response": []
+		},
+		{
+			"name": "purchase orders- all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/purchase_orders/"
+			},
+			"response": []
+		},
+		{
+			"name": "purchase orders- all Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"po_number\":\"15478awrrf\",\r\n\t\"vendor\":1,\r\n    \"delivery_date\":\"2024-10-10\",\r\n\t\"items\":[\"keyboard\"],\r\n\t\"quantity\":5,\r\n\t\"status\":\"inompleted\",\r\n\t\"issue_date\": \"2023-02-12T00:00:00Z\",\r\n\t\"quality_rating\": 4\r\n\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/purchase_orders/"
+			},
+			"response": []
+		},
+		{
+			"name": "specific-Purchase orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/purchase_orders/1"
+			},
+			"response": []
+		},
+		{
+			"name": "specific-Purchase orders Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/purchase_orders/2"
+			},
+			"response": []
+		},
+		{
+			"name": "specific-Purchase orders Put",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"delivery_date\": \"2024-10-10T00:00:00Z\",\r\n    \"items\": [\r\n        \"keyboard\",\"Mouse\"\r\n    ],\r\n    \"quantity\": 8,\r\n    \"status\": \"inompleted\",\r\n    \"delivered_date\": null,\r\n    \"quality_rating\": 4.0,\r\n    \"issue_date\": \"2023-02-12T00:00:00Z\",\r\n    \"achnowledgment_date\": null,\r\n    \"vendor\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/purchase_orders/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Peromance Matrics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/vendors/1/performance"
+			},
+			"response": []
+		},
+		{
+			"name": "Achnowledgement",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/purchase_order/1/achnowledgment"
+			},
+			"response": []
+		},
+		{
+			"name": "Performance -matrics logs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NzM3ODcyLCJpYXQiOjE3MTQ3MzA2NzIsImp0aSI6IjgyM2E1YzkyZTE2NzQ2YTM5ZjdiNTAzNjJjNDU2NjM5IiwidXNlcl9pZCI6MX0.4aXz09185kFkQnshjoYL1zi7fMKeoamQ5XRRpG2jNqE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/vendor/performance/1/log"
+			},
+			"response": []
+		}
+	]
+}
